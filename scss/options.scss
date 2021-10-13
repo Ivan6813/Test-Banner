@@ -1,0 +1,236 @@
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  @include iphoneXR {
+    margin-bottom: 29px;
+  }
+  @include iphoneX {
+    margin-bottom: 20px;
+  }
+  @include iphoneSE {
+    margin-bottom: 13px;
+  }
+}
+
+.first-option,
+.second-option,
+.third-option {
+  background: #f3f2f9;
+  width: 250px;
+  height: 270px;
+  border-radius: 10px;
+  margin: 0 15px;
+  transition: all 0.5 ease;
+  @include iphoneXR {
+    width: 118px;
+    height: 176px;
+    margin: 0 5px;
+  }
+  @include iphoneX {
+    width: 105px;
+    height: 156px;
+  }
+  @include iphoneSE {
+    width: 88px;
+    height: 132px;
+  }
+}
+
+.first-option {
+  height: 200px;
+  @include iphoneXR {
+    height: 151px;
+  }
+  @include iphoneX {
+    height: 131px;
+  }
+  @include iphoneSE {
+    height: 112px;
+  }
+}
+
+.third-option {
+  display: flex;
+  flex-direction: column;
+  &.header-option {
+    background: #fca759;
+  }
+}
+
+.header-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #fcbf59;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  @include iphoneXR {
+    height: 25px;
+  }
+  @include iphoneSE {
+    height: 21px;
+  }
+}
+
+.header-option__text {
+  font-size: 20px;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  @include iphoneXR {
+    font-size: 13px;
+  }
+  @include iphoneSE {
+    font-size: 11px;
+  }
+}
+
+.body-option,
+.first-option {
+  padding: 10px 15px;
+  @include iphoneXR {
+    padding: 6px 11px;
+  }
+  @include iphoneX {
+    padding: 3px 10px;
+  }
+  @include iphoneSE {
+    padding: 3px;
+  }
+}
+
+.body-option {
+  flex: 1 1 auto;
+}
+
+.footer-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background: #fca759;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include iphoneXR {
+    height: 16px;
+  }
+  @include iphoneSE {
+    height: 15px;
+  }
+}
+
+.footer-option__text {
+  font-family: SFProText;
+  font-size: 15px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  @include iphoneXR {
+    font-size: 9px;
+  }
+  @include iphoneSE {
+    font-size: 7px;
+  }
+}
+
+.option__title {
+  font-family: SFProText;
+  font-size: 24px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  @include iphoneXR {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  @include iphoneX {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  @include iphoneSE {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.option__full-price {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+  @include iphoneXR {
+    font-size: 13px;
+  }
+  @include iphoneX {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  @include iphoneSE {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 3px;
+  }
+}
+
+.option__price-per-month {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  @include iphoneXR {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  @include iphoneSE {
+    font-size: 10px;
+  }
+}
+
+/* btn continue */
+
+.btn__select-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  @include iphoneXR {
+    margin-bottom: 20px;
+  }
+  @include iphoneSE {
+    margin-bottom: 17px;
+  }
+}
+
+.btn-continue {
+  width: 374px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SFProText;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.0352px;
+  color: #ffffff;
+  background: linear-gradient(225deg, #542285 0%, #222266 100%);
+  border-radius: 5px;
+  border: none;
+  @include iphoneX {
+    width: 335px;
+  }
+  @include iphoneSE {
+    width: 280px;
+  }
+}

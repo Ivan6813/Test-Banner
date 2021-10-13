@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Ivan6813/Test-Banner/issues"
   },
-  "homepage": "https://github.com/Ivan6813/Test-Banner#readme"
+  "homepage": "https://github.com/Ivan6813/Test-Banner#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0"
+  }
 }

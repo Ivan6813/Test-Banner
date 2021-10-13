@@ -1,0 +1,24 @@
+.container
+    .options
+        .first-option
+            h4.option__title 1br month
+            .option__full-price $14.99 / month
+            p.option__price-per-month month: $14.99
+        .second-option
+            .header-option
+                h5.header-option__text SAVE 80%
+            .body-option
+                h4.option__title 12 months
+                .option__full-price $39.99 per year
+                p.option__price-per-month month: $3.33
+        .third-option
+            .header-option
+                h5.header-option__text SAVE 90%
+            .body-option
+                h4.option__title 3 months
+                .option__full-price $29.99 /<br> 3 month
+                p.option__price-per-month month: $9.99
+            .footer-option
+                h5.footer-option__text SALE
+    .btn__select-option
+        +button('btn-continue', 'continue' )

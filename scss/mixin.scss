@@ -1,0 +1,23 @@
+@mixin desktop {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin iphoneXR {
+  @media (max-width: 415px) {
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin iphoneSE {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

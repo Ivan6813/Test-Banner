@@ -1,0 +1,27 @@
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  @include iphoneXR {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  @include iphoneXR {
+    width: 100%;
+  }
+}
+
+@import "header.scss";

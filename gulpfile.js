@@ -1,6 +1,6 @@
 const { src, watch , parallel, dest} = require("gulp");
 const pug = require("gulp-pug");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const browserSync = require("browser-sync").create();
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require("gulp-autoprefixer");
@@ -26,14 +26,13 @@ function html () {
 }
 
 function css() {
-    return src("sass/style.scss")
+    return src("scss/style.scss")
         .pipe(sass())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(dest("build/l"))
+        .pipe(dest("build/"))
         .pipe(browserSync.stream())
 }
 

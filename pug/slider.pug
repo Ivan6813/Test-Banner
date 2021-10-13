@@ -1,27 +1,14 @@
--let cardsSlider = [
-    {
-        title: 'Fantastic',
-        discription: ' I can say I am 💯 happy with this app. 15 pounds off in 30 days!'
-    },
-    {
-        title: 'Fantastic',
-        discription: ' I can say I am 💯 happy with this app. 15 pounds off in 30 days!'
-    },
-    {
-        title: 'Fantastic',
-        discription: ' I can say I am 💯 happy with this app. 15 pounds off in 30 days!'
-    }
-];
+-let cardsSlider = ['Fantastic'];
 
 .container
     .slider-block
         each value in cardsSlider
-        .slider-item
-            h3.title-card-slider #{value.title}
-            .stars
-                img(class="star" src="./Star.svg" alt="")
-                img(class="star" src="./Star.svg" alt="")
-                img(class="star" src="./Star.svg" alt="")
-                img(class="star" src="./Star.svg" alt="")
-                img(class="star" src="./Star.svg" alt="")
-            p.discription #{value.discription}
+            .slider-item
+                h3.title-card-slider #{value}
+                .stars
+                    img(class="star" src="./images/Star.svg" alt="")
+                    img(class="star" src="./images/Star.svg" alt="")
+                    img(class="star" src="./images/Star.svg" alt="")
+                    img(class="star" src="./images/Star.svg" alt="")
+                    img(class="star" src="./images/Star.svg" alt="")
+                p.discription #{value}

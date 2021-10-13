@@ -2,17 +2,11 @@
   position: relative;
   background: #894ac9;
   padding: 30px 0 100px 0;
-
-  @media screen and (max-width: 415px) {
-    & {
-      padding: 50px 0 100px 0;
-    }
+  @include iphoneXR {
+    padding: 50px 0 100px 0;
   }
-
-  @media screen and (max-width: 320px) {
-    & {
-      padding: 30px 0 70px 0;
-    }
+  @include iphoneSE {
+    padding: 30px 0 70px 0;
   }
 }
 
@@ -20,17 +14,11 @@
   display: flex;
   justify-content: end;
   padding-right: 15px;
-
-  @media screen and (min-width: 500px) {
-    & {
-      display: none;
-    }
+  @include desktop {
+    display: none;
   }
-
-  @media screen and (max-width: 320px) {
-    & {
-      padding-right: 10px;
-    }
+  @include iphoneSE {
+    padding-right: 10px;
   }
 }
 
@@ -50,25 +38,16 @@
   letter-spacing: 0.37px;
   color: #ffffff;
   margin: 20px 0 33px 0;
-
-  @media screen and (max-width: 415px) {
-    & {
-      font-size: 34px;
-      margin: 0 0 33px 0;
-    }
+  @include iphoneXR {
+    font-size: 34px;
+    margin: 0 0 33px 0;
   }
-
-  @media screen and (max-width: 375px) {
-    & {
-      margin: 0 0 20px 0;
-    }
+  @include iphoneX {
+    margin: 0 0 20px 0;
   }
-
-  @media screen and (max-width: 320px) {
-    & {
-      font-size: 24px;
-      margin: 0 0 6px 0;
-    }
+  @include iphoneSE {
+    font-size: 24px;
+    margin: 0 0 6px 0;
   }
 }
 
@@ -78,17 +57,11 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-
-  @media screen and (max-width: 375px) {
-    & {
-      height: 180px;
-    }
+  @include iphoneX {
+    height: 180px;
   }
-
-  @media screen and (max-width: 320px) {
-    & {
-      height: 100px;
-    }
+  @include iphoneSE {
+    height: 100px;
   }
 
   &::before,
@@ -105,32 +78,20 @@
 
   &::before {
     left: -150px;
-  }
-
-  &::after {
-    right: -150px;
-  }
-
-  @media screen and (max-width: 415px) {
-    &::before {
+    @include iphoneXR {
       left: -210px;
     }
-  }
-
-  @media screen and (max-width: 415px) {
-    &::after {
-      right: -210px;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    &::before {
+    @include iphoneX {
       left: -240px;
     }
   }
 
-  @media screen and (max-width: 375px) {
-    &::after {
+  &::after {
+    right: -150px;
+    @include iphoneXR {
+      right: -210px;
+    }
+    @include iphoneX {
       right: -240px;
     }
   }
@@ -146,29 +107,20 @@
   border-top: 1px solid #a585c5;
   height: 50px;
   padding-left: 50px;
+  @include iphoneXR {
+    padding-left: 40px;
+  }
+  @include iphoneX {
+    height: 45px;
+    padding-left: 30px;
+  }
+  @include iphoneSE {
+    height: 25px;
+    padding-left: 20px;
+  }
 
   &:last-child {
     border-bottom: 1px solid #a585c5;
-  }
-
-  @media screen and (max-width: 415px) {
-    & {
-      padding-left: 40px;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    & {
-      height: 45px;
-      padding-left: 30px;
-    }
-  }
-
-  @media screen and (max-width: 320px) {
-    & {
-      height: 25px;
-      padding-left: 20px;
-    }
   }
 }
 
@@ -179,11 +131,8 @@
   line-height: 14px;
   color: #ffffff;
   z-index: 2;
-
-  @media screen and (max-width: 415px) {
-    & {
-      font-size: 12px;
-    }
+  @include iphoneXR {
+    font-size: 12px;
   }
 }
 
@@ -194,28 +143,19 @@
   left: 53%;
   transform: translate(-50%, -50%);
   z-index: 3;
-
-  @media screen and (max-width: 415px) {
-    & {
-      top: 55%;
-      left: 60%;
-    }
+  @include iphoneXR {
+    top: 55%;
+    left: 60%;
   }
-
-  @media screen and (max-width: 375px) {
-    & {
-      height: 230px;
-      top: 55%;
-      left: 61%;
-    }
+  @include iphoneX {
+    height: 230px;
+    top: 55%;
+    left: 61%;
   }
-
-  @media screen and (max-width: 320px) {
-    & {
-      height: 130px;
-      top: 57%;
-      left: 60%;
-    }
+  @include iphoneSE {
+    height: 130px;
+    top: 57%;
+    left: 60%;
   }
 }
 

@@ -1,0 +1,19 @@
+{
+  "name": "test-banner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan6813/Test-Banner.git"
+  },
+  "author": "Ivan Linkevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan6813/Test-Banner/issues"
+  },
+  "homepage": "https://github.com/Ivan6813/Test-Banner#readme"
+}

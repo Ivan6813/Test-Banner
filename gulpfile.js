@@ -29,9 +29,7 @@ function css() {
     return src("scss/style.scss")
         .pipe(sass())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(autoprefixer({
-            cascade: false
-        }))
+        .pipe(autoprefixer(['last 5 versions', '> 1%'], { cascade: true }))
         .pipe(dest("build/"))
         .pipe(browserSync.stream())
 }

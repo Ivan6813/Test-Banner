@@ -6,9 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 .wrapper {
   @include iphoneXR {
     overflow: hidden;

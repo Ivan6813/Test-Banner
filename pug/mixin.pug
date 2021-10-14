@@ -1,2 +1,9 @@
 mixin button(className, text)
     button(class=`${className}`) #{text}
+
+
+mixin numberOfStars(stars)
+    -let maxNumberOfStars = [1, 2, 3, 4, 5];
+    each value  in maxNumberOfStars 
+        if value <= stars
+            img(class="star" src="./images/Star.svg" alt="")

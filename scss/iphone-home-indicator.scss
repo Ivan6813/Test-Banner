@@ -1,0 +1,20 @@
+.home-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  height: 34px;
+  @include desktop {
+    display: none;
+  }
+  @include iphoneSE {
+    display: none;
+  }
+}
+
+.btn-indicator {
+  width: 134px;
+  height: 5px;
+  background: #000000;
+  border-radius: 100px;
+}

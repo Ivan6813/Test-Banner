@@ -1,10 +1,9 @@
 -let cardsSlider = [{title:"Fantastic", numberOfStars: 5, discription:"I can say I am 💯 happy with this app. 15 pounds off in 30 days!"}, {title:"Fantastic", numberOfStars: 5, discription:"I can say I am 💯 happy with this app. 15 pounds off in 30 days!"},{title:"Fantastic", numberOfStars: 5, discription:"I can say I am 💯 happy with this app. 15 pounds off in 30 days!"}];
 
-.container
-    .slider-block
-        each value in cardsSlider
-            .slider-item
-                h3.title-card-slider #{value.title}
-                .stars
-                    +numberOfStars(`${value.numberOfStars}`)
-                p.discription #{value.discription}
+.slider-block
+    each value in cardsSlider
+        .slider-item
+            h3.slider-item__title #{value.title}
+            .slider-item__stars
+                +numberOfStars(`${value.numberOfStars}`)
+            p.slider-item__discription #{value.discription}

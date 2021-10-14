@@ -1,0 +1,79 @@
+.slider-block {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -75px;
+  margin-bottom: 20px;
+  @include iphoneSE {
+    margin-top: -60px;
+    margin-bottom: 12px;
+  }
+}
+
+.slider-item {
+  margin: 0 5px 0 5px;
+  padding: 20px;
+  background: #f3f2f9;
+  border-radius: 10px;
+  width: 420px;
+  @include iphoneXR {
+    min-width: 375px;
+    margin: 0 2.5px 0 2.5px;
+  }
+  @include iphoneX {
+    min-width: 335px;
+  }
+  @include iphoneSE {
+    min-width: 280px;
+    height: 110px;
+    padding: 16px;
+  }
+}
+
+.slider-item__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  &::after {
+    content: "lila_lane";
+    display: block;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(26, 26, 26, 0.5);
+  }
+  @include iphoneSE {
+    margin-bottom: 6px;
+  }
+}
+
+.slider-item__stars {
+  display: flex;
+  margin-bottom: 16px;
+  @include iphoneX {
+    margin-bottom: 8px;
+  }
+  @include iphoneSE {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.slider-item__discription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1a1a1a;
+  @include iphoneSE {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}

@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  @include iphoneXR {
+    margin-bottom: 5px;
+  }
+  @include iphoneSE {
+    margin-bottom: 15px;
+  }
+}
+
+.footer__text {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  @include iphoneXR {
+    font-size: 11px;
+  }
+}

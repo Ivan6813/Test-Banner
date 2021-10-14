@@ -1,9 +1,17 @@
+-let headerNav = ["Extr. Obese", "Obese", "Overweight", "Healthy"];
+-let maxNumberOfStars = [1, 2, 3, 4, 5];
+
 mixin button(className, text)
     button(class=`${className}`) #{text}
 
-
 mixin numberOfStars(stars)
-    -let maxNumberOfStars = [1, 2, 3, 4, 5];
     each value  in maxNumberOfStars 
         if value <= stars
             img(class="star" src="./images/Star.svg" alt="")
+
+mixin navMenu(classNameNav, classNameUl, classNameLi, classNameA)
+    nav(class=`${classNameNav}`) 
+        ul(class=`${classNameUl}`)
+            each value in headerNav
+                li(class=`${classNameLi}`)
+                    a(class=`${classNameA}` href="#") #{value}

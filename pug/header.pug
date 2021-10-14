@@ -1,14 +1,8 @@
--let headerNav = ["Extr. Obese", "Obese", "Overweight", "Healthy"];
-
 header.header
     .container
         .header__btn
-            +button('btn-close')
+            +button("btn-close")
         h1.header__title Try Verv for free
-        nav.header__nav 
-            ul.nav-list
-                each value in headerNav
-                    li.nav-list__item
-                        a.link-item(href="#") #{value}
+        +navMenu("header__nav", "nav-list", "nav-list__item", "link-item")
         .header__block-woman
             img(src="./images/women.svg" class="woman-img" alt="")

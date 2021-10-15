@@ -4,6 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require("browser-sync").create();
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require("gulp-autoprefixer");
+const concat = require('gulp-concat');
 
 function browsersync () {
     browserSync.init({
@@ -34,8 +35,15 @@ function css() {
         .pipe(browserSync.stream())
 }
 
+function js () {
+    return src("js/*.js")
+      .pipe(concat("script.js"))
+      .pipe(dest("build/"));
+  };
+
 exports.browsersync = browsersync;
 exports.html = html;
 exports.css = css;
+exports.js = js;
 
-exports.default = parallel(html, css, browsersync);
+exports.default = parallel(html, css, js, browsersync);

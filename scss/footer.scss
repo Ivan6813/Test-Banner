@@ -17,7 +17,9 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 15px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--textColor);
+  transition: all 0.7s ease;
+  opacity: 0.4;
   @include iphoneXR {
     font-size: 11px;
   }

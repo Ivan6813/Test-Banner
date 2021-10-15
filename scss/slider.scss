@@ -16,7 +16,8 @@
 .slider-item {
   margin: 0 5px 0 5px;
   padding: 20px;
-  background: #f3f2f9;
+  background: var(--cards-bg);
+  transition: all 0.7s ease;
   border-radius: 10px;
   width: 420px;
   @include iphoneXR {
@@ -39,6 +40,8 @@
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 10px;
+  color: var(--textColor);
+  transition: all 0.7s ease;
   &::after {
     content: "lila_lane";
     display: block;
@@ -47,7 +50,9 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    color: rgba(26, 26, 26, 0.5);
+    color: var(--textColor);
+    transition: all 0.7s ease;
+    opacity: 0.5;
   }
   @include iphoneSE {
     margin-bottom: 6px;
@@ -71,7 +76,8 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-  color: #1a1a1a;
+  color: var(--textColor);
+  transition: all 0.7s ease;
   @include iphoneSE {
     font-size: 13px;
     line-height: 15px;

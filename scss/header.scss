@@ -13,12 +13,10 @@
 .header__btn {
   display: flex;
   justify-content: end;
-  padding-right: 15px;
-  @include desktop {
-    display: none;
-  }
+  justify-content: space-between;
+  padding: 0 15px;
   @include iphoneSE {
-    padding-right: 10px;
+    padding: 0 10px;
   }
 }
 
@@ -29,6 +27,32 @@
   border: none;
   border-radius: 50%;
   opacity: 0.5;
+  @include desktop {
+    display: none;
+  }
+}
+
+.btn-dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.btn-select-theme {
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 30px;
+  opacity: 0.5;
+  transform: translateY(-100%);
+  transition: all 0.7s ease;
+  cursor: pointer;
+  @include iphoneXR {
+    cursor: none;
+  }
+}
+
+.btn-select-theme:focus {
+  outline: none;
 }
 
 .header__title {

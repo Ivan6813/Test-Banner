@@ -17,16 +17,19 @@
 .first-option,
 .second-option,
 .third-option {
-  background: #f3f2f9;
+  background: var(--options-bg);
+  color: var(--textColor);
   width: 230px;
   height: 250px;
   border-radius: 10px;
   margin: 0 15px;
-  transition: all 0.5 ease;
+  transition: all 0.7s ease;
+  cursor: pointer;
   @include iphoneXR {
     width: 118px;
     height: 176px;
     margin: 0 5px;
+    cursor: none;
   }
   @include iphoneX {
     width: 105px;
@@ -141,7 +144,6 @@
   font-size: 24px;
   line-height: 25px;
   text-align: center;
-  color: #000000;
   margin-bottom: 20px;
   @include iphoneXR {
     line-height: 17px;
@@ -165,7 +167,6 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #000000;
   margin-bottom: 15px;
   @include iphoneXR {
     font-size: 13px;
@@ -189,7 +190,6 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  color: #000000;
   @include iphoneXR {
     font-size: 13px;
     margin-bottom: 5px;
@@ -197,6 +197,11 @@
   @include iphoneSE {
     font-size: 10px;
   }
+}
+
+.active {
+  background: #894ac9;
+  color: #ffffff;
 }
 
 /* btn continue */
@@ -234,4 +239,16 @@
   @include iphoneSE {
     width: 280px;
   }
+}
+
+.btn-continue:hover {
+  background: linear-gradient(225deg, #754f9b 0%, #3e3e94 100%);
+  transition: all 0.7s ease;
+  @include iphoneXR {
+    background: linear-gradient(225deg, #542285 0%, #222266 100%);
+  }
+}
+
+.btn-continue:focus {
+  outline: none;
 }

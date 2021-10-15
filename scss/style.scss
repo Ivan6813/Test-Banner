@@ -1,9 +1,34 @@
 @import "mixin";
 
+$body-bg: #ffffff;
+$textColor: #1a1a1a;
+$cards-bg: #f3f2f9;
+$options-bg: #f3f2f9;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #{$body-bg};
+  --textColor: #{$textColor};
+  --cards-bg: #{$cards-bg};
+  --options-bg: #{$options-bg};
+}
+
+.dark {
+  --body-bg: #000000;
+  --textColor: #ffffff;
+  --cards-bg: #262526;
+  --options-bg: #373640;
+}
+
+body {
+  background-color: var(--body-bg);
+  transition: all 0.7s ease;
+  height: 100%;
 }
 
 .wrapper {

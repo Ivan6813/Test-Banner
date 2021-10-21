@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: url(./fonts/SFProDisplay.ttf);
+}
+@font-face {
+  font-family: "SFProText";
+  src: url(./fonts/SFProText.ttf);
+}
+
 @import "mixin";
 
 $body-bg: #ffffff;
@@ -28,13 +37,10 @@ $options-bg: #f3f2f9;
 body {
   background-color: var(--body-bg);
   transition: all 0.7s ease;
-  height: 100%;
 }
 
 .wrapper {
-  @include iphoneXR {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .container {

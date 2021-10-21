@@ -19,9 +19,9 @@
 .third-option {
   background: var(--options-bg);
   color: var(--textColor);
-  width: 230px;
-  height: 250px;
-  border-radius: 10px;
+  width: 200px;
+  height: 230px;
+  border-radius: 5px;
   margin: 0 15px;
   transition: all 0.7s ease;
   cursor: pointer;
@@ -42,7 +42,7 @@
 }
 
 .first-option {
-  height: 200px;
+  height: 180px;
   @include iphoneXR {
     height: 151px;
   }
@@ -68,8 +68,8 @@
   align-items: center;
   height: 50px;
   background: #fcbf59;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   @include iphoneXR {
     height: 25px;
   }
@@ -79,6 +79,7 @@
 }
 
 .header-option__text {
+  font-family: "SFProText";
   font-size: 20px;
   letter-spacing: 0.78px;
   text-transform: uppercase;
@@ -115,8 +116,8 @@
   align-items: center;
   height: 35px;
   background: #fca759;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   @include iphoneXR {
     height: 16px;
   }
@@ -126,7 +127,7 @@
 }
 
 .footer-option__text {
-  font-family: SFProText;
+  font-family: "SFProText";
   font-size: 15px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
@@ -140,41 +141,49 @@
 }
 
 .option__title {
-  font-family: SFProText;
-  font-size: 24px;
-  line-height: 25px;
+  font-family: "SFProText";
+  font-size: 15px;
+  line-height: normal;
   text-align: center;
-  margin-bottom: 20px;
-  @include iphoneXR {
-    line-height: 17px;
-    margin-bottom: 12px;
+  margin-bottom: 11px;
+  & span {
+    display: block;
+    font-size: 24px;
+    @include iphoneSE {
+      font-size: 20px;
+      line-height: 17px;
+    }
   }
   @include iphoneX {
-    font-size: 15px;
-    margin-bottom: 7px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 6px;
   }
   @include iphoneSE {
     font-size: 13px;
-    line-height: 15px;
-    margin-bottom: 5px;
+    line-height: 17px;
+    margin: 5px 0;
   }
 }
 
 .option__full-price {
-  font-family: SF Pro Text;
+  font-family: "SFProText";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
+  & span {
+    display: block;
+  }
   @include iphoneXR {
     font-size: 13px;
     line-height: 16px;
   }
   @include iphoneX {
     font-size: 13px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   @include iphoneSE {
     font-size: 11px;
@@ -184,15 +193,11 @@
 }
 
 .option__price-per-month {
-  font-family: SF Pro Text;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "SFProText";
   font-size: 16px;
-  line-height: 16px;
   text-align: center;
   @include iphoneXR {
-    font-size: 13px;
-    margin-bottom: 5px;
+    font-size: 12px;
   }
   @include iphoneSE {
     font-size: 10px;
@@ -225,7 +230,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: SFProText;
+  font-family: "SFProText";
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.0352px;

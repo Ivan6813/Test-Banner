@@ -1,79 +1,95 @@
-.slider-block {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+.slider {
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 145px;
+  margin-top: -77px;
+  margin-bottom: 28px;
   left: 50%;
-  transform: translateX(-50%);
-  margin-top: -70px;
-  margin-bottom: 20px;
+  @include iphoneXR {
+    left: 0;
+  }
+  @include iphoneX {
+    margin-top: -74px;
+    margin-bottom: 22px;
+  }
   @include iphoneSE {
-    margin-top: -60px;
-    margin-bottom: 12px;
+    margin-top: -62px;
+    margin-bottom: 14px;
+    height: 110px;
   }
 }
 
 .slider-item {
-  margin: 0 5px 0 5px;
-  padding: 20px;
-  background: var(--cards-bg);
-  transition: all 0.7s ease;
+  width: 375px;
+  height: 145px;
+  position: absolute;
+  transition: all ease 0.5s;
   border-radius: 10px;
-  width: 420px;
+  background: var(--cards-bg);
+  padding: 20px;
   @include iphoneXR {
-    min-width: 375px;
-    margin: 0 2.5px 0 2.5px;
+    width: 375px;
   }
   @include iphoneX {
-    min-width: 335px;
+    width: 335px;
   }
   @include iphoneSE {
-    min-width: 280px;
-    height: 110px;
+    width: 280px;
     padding: 16px;
+    height: 110px;
+  }
+}
+
+.slider-item__headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  @include iphoneSE {
+    margin-bottom: 6px;
   }
 }
 
 .slider-item__title {
-  display: flex;
-  justify-content: space-between;
+  font-family: "SFProText";
   font-size: 15px;
-  line-height: 18px;
-  margin-bottom: 10px;
+  letter-spacing: 0.5px;
   color: var(--textColor);
   transition: all 0.7s ease;
-  &::after {
-    content: "lila_lane";
-    display: block;
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    color: var(--textColor);
-    transition: all 0.7s ease;
-    opacity: 0.5;
-  }
-  @include iphoneSE {
-    margin-bottom: 6px;
-  }
+}
+
+.slider-item__subtitle {
+  font-family: "SFProText";
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--textColor);
+  transition: all 0.7s ease;
+  opacity: 0.5;
 }
 
 .slider-item__stars {
   display: flex;
   margin-bottom: 16px;
   @include iphoneX {
-    margin-bottom: 8px;
+    margin-bottom: 17px;
   }
+  @include iphoneSE {
+    margin-bottom: 12px;
+  }
+}
+
+.star {
+  margin-right: 4px;
   @include iphoneSE {
     width: 17px;
     height: 17px;
+    margin-right: 3px;
   }
 }
 
 .slider-item__discription {
-  font-style: normal;
-  font-weight: normal;
+  font-family: "SFProText";
   font-size: 15px;
   line-height: 18px;
   color: var(--textColor);

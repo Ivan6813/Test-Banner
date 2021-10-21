@@ -5,6 +5,8 @@ const browserSync = require("browser-sync").create();
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require("gulp-autoprefixer");
 const concat = require('gulp-concat');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 
 function browsersync () {
     browserSync.init({
@@ -38,6 +40,10 @@ function css() {
 function js () {
     return src("js/*.js")
       .pipe(concat("script.js"))
+      .pipe(babel({
+        presets: ["@babel/preset-env"]
+        }))
+      .pipe(uglify())
       .pipe(dest("build/"));
   };
 

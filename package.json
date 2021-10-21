@@ -25,5 +25,11 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
   }
 }

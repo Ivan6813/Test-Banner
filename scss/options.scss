@@ -168,8 +168,6 @@
 
 .option__full-price {
   font-family: "SFProText";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -225,14 +223,13 @@
 }
 
 .btn-continue {
-  width: 374px;
+  width: 375px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "SFProText";
   font-size: 22px;
-  line-height: 28px;
   letter-spacing: 0.0352px;
   color: #ffffff;
   background: linear-gradient(225deg, #542285 0%, #222266 100%);

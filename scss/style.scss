@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "SFProDisplay";
-  src: url(./fonts/SFProDisplay.ttf);
-}
-@font-face {
   font-family: "SFProText";
   src: url(./fonts/SFProText.ttf);
 }
@@ -34,13 +30,9 @@ $options-bg: #f3f2f9;
   --options-bg: #373640;
 }
 
-body {
+.wrapper {
   background-color: var(--body-bg);
   transition: all 0.7s ease;
-}
-
-.wrapper {
-  overflow: hidden;
 }
 
 .container {

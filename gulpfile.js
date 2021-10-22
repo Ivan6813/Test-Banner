@@ -1,12 +1,12 @@
 const { src, watch , parallel, dest} = require("gulp");
-const pug = require("gulp-pug");
-const sass = require('gulp-sass')(require('sass'));
 const browserSync = require("browser-sync").create();
-const cleanCSS = require('gulp-clean-css');
+const pug = require("gulp-pug");
+const sass = require("gulp-sass")(require("sass"));
+const cleanCSS = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
-const concat = require('gulp-concat');
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
+const concat = require("gulp-concat");
+const babel = require("gulp-babel");
+const uglify = require("gulp-uglify");
 
 function browsersync () {
     browserSync.init({
@@ -31,8 +31,8 @@ function html () {
 function css() {
     return src("scss/style.scss")
         .pipe(sass())
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(autoprefixer(['last 5 versions', '> 1%'], { cascade: true }))
+        .pipe(cleanCSS({compatibility: "ie8"}))
+        .pipe(autoprefixer(["last 5 versions", "> 1%"], { cascade: true }))
         .pipe(dest("build/"))
         .pipe(browserSync.stream())
 }

@@ -4,23 +4,23 @@ const second = document.querySelector(".second-option");
 const third = document.querySelector(".third-option");
 const btnSelect = document.querySelector(".btn-continue");
 
-options.addEventListener("click", (event)=> {
+options.addEventListener("click", (event)=>{
     
-    if(event.target.closest(".first-option") === first) {
+    if(event.target.closest(".first-option") === first){
         first.classList.add("active");
         second.classList.remove("active");
         third.classList.remove("active");
         localStorage.removeItem("options");
         localStorage.setItem("options", "1")
     }
-    if(event.target.closest(".second-option") === second) {
+    if(event.target.closest(".second-option") === second){
         second.classList.add("active");
         first.classList.remove("active");
         third.classList.remove("active");
         localStorage.removeItem("options");
         localStorage.setItem("options", "2")
     }
-    if(event.target.closest(".third-option") === third) {
+    if(event.target.closest(".third-option") === third){
         third.classList.add("active");
         first.classList.remove("active");
         second.classList.remove("active");
@@ -29,7 +29,7 @@ options.addEventListener("click", (event)=> {
     }
 })
 
-btnSelect.addEventListener("click", ()=> {
+btnSelect.addEventListener("click", ()=>{
     const path = localStorage.getItem("options");
     window.open(`https://www.google.com/search?q=${path}`, "_blank");
 })

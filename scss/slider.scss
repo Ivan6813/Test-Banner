@@ -1,13 +1,10 @@
-.slider {
+.swiper {
   position: relative;
-  display: flex;
-  align-items: center;
+  width: 100%;
   height: 145px;
   margin-top: -77px;
   margin-bottom: 28px;
-  left: 50%;
   @include iphoneXR {
-    left: 0;
   }
   @include iphoneX {
     margin-top: -74px;
@@ -22,15 +19,10 @@
 
 .slider-item {
   width: 375px;
-  height: 145px;
-  position: absolute;
-  transition: all ease 0.5s;
   border-radius: 10px;
   background: var(--cards-bg);
   padding: 20px;
-  @include iphoneXR {
-    width: 375px;
-  }
+  transition: all 0.7s ease;
   @include iphoneX {
     width: 335px;
   }
@@ -47,13 +39,14 @@
   align-items: center;
   margin-bottom: 10px;
   @include iphoneSE {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 }
 
 .slider-item__title {
   font-family: "SFProText";
   font-size: 15px;
+  margin: 0;
   letter-spacing: 0.5px;
   color: var(--textColor);
   transition: all 0.7s ease;
@@ -75,16 +68,19 @@
     margin-bottom: 17px;
   }
   @include iphoneSE {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 }
 
 .star {
   margin-right: 4px;
+  @include iphoneX {
+    margin-right: 5px;
+  }
   @include iphoneSE {
     width: 17px;
     height: 17px;
-    margin-right: 3px;
+    margin-right: 2px;
   }
 }
 
@@ -97,5 +93,6 @@
   @include iphoneSE {
     font-size: 13px;
     line-height: 15px;
+    letter-spacing: -0.1px;
   }
 }

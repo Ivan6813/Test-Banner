@@ -1,23 +1,23 @@
 const selectTheme = document.querySelector(".btn-select-theme");
 
-selectTheme.addEventListener("click", ()=> {
+selectTheme.addEventListener("click", ()=>{
     if(localStorage.getItem("theme") === "dark"){
         localStorage.removeItem("theme");
     }
-    else {
+    else{
         localStorage.setItem("theme", "dark");
 
     }
     addDarkClass();
 })
 
-function addDarkClass () {
-    if(localStorage.getItem("theme") === "dark") {
+function addDarkClass (){
+    if(localStorage.getItem("theme") === "dark"){
         document.querySelector("html").classList.add("dark");
         selectTheme.textContent = "Light";
         selectTheme.classList.add("btn-dark");
     }
-    else {
+    else{
         document.querySelector("html").classList.remove("dark");
         selectTheme.textContent = "Dark";
         selectTheme.classList.remove("btn-dark");

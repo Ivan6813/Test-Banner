@@ -2,21 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   @include iphoneXR {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
   @include iphoneSE {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 }
 
 .footer__text {
   font-family: "SFProText";
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
-  line-height: 15px;
   color: var(--textColor);
   transition: all 0.7s ease;
   opacity: 0.4;

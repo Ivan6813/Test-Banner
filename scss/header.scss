@@ -116,6 +116,9 @@
     @include iphoneX {
       left: -240px;
     }
+    @include iphone {
+      -webkit-filter: blur(50px);
+    }
   }
 
   &::after {
@@ -125,6 +128,9 @@
     }
     @include iphoneX {
       right: -240px;
+    }
+    @include iphone {
+      -webkit-filter: blur(50px);
     }
   }
 }

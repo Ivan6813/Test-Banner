@@ -117,7 +117,7 @@
       left: -240px;
     }
     @include iphone {
-      -webkit-filter: blur(50px);
+      -webkit-filter: blur(35px);
     }
   }
 
@@ -130,7 +130,7 @@
       right: -240px;
     }
     @include iphone {
-      -webkit-filter: blur(50px);
+      -webkit-filter: blur(35px);
     }
   }
 }

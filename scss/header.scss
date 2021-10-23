@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   background: #894ac9;
   padding: 30px 0 100px 0;
   @include iphoneXR {
@@ -84,54 +83,20 @@
 }
 
 .header__nav {
-  background: rgba(34, 34, 102, 0.3);
+  background: rgba(137, 74, 201);
+  background: linear-gradient(
+    90deg,
+    rgba(137, 74, 201, 1) 0%,
+    rgba(34, 34, 102, 0.3) 50%,
+    rgba(137, 74, 201, 1) 100%
+  );
   height: 200px;
   width: 100%;
-  position: relative;
-  overflow: hidden;
   @include iphoneX {
     height: 180px;
   }
   @include iphoneSE {
     height: 100px;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    background-color: #894ac9;
-    width: 350px;
-    height: 470px;
-    position: absolute;
-    top: -120px;
-    filter: blur(70px);
-    z-index: 1;
-  }
-
-  &::before {
-    left: -150px;
-    @include iphoneXR {
-      left: -210px;
-    }
-    @include iphoneX {
-      left: -240px;
-    }
-    @include iphone {
-      -webkit-filter: blur(35px);
-    }
-  }
-
-  &::after {
-    right: -150px;
-    @include iphoneXR {
-      right: -210px;
-    }
-    @include iphoneX {
-      right: -240px;
-    }
-    @include iphone {
-      -webkit-filter: blur(35px);
-    }
   }
 }
 
@@ -142,7 +107,16 @@
 .nav-list__item {
   display: flex;
   align-items: center;
-  border-top: 1px solid #a585c5;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  border-image: linear-gradient(
+    90deg,
+    rgba(137, 74, 201, 0.7) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(137, 74, 201, 0.7) 100%
+  );
+  border-image-slice: 1;
   height: 50px;
   padding-left: 50px;
   @include iphoneXR {
@@ -158,17 +132,15 @@
   }
 
   &:last-child {
-    border-bottom: 1px solid #a585c5;
+    border-width: 1px 0 1px 0;
   }
 }
 
 .link-item {
-  position: relative;
   text-decoration: none;
   font-family: "SFProText";
   font-size: 16px;
   color: #fff;
-  z-index: 2;
   @include iphoneXR {
     font-size: 12px;
   }
@@ -179,7 +151,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
   @include desktop {
     display: none;
   }
@@ -287,21 +258,20 @@
 .header__block-woman {
   position: absolute;
   height: 290px;
-  top: 53%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  top: 0;
+  transform: translate(-20%, 35%);
+  left: 50%;
+  z-index: 1;
   @include iphoneXR {
-    top: 55%;
-    left: 61%;
+    transform: translate(-20%, 39%);
   }
   @include iphoneX {
-    height: 245px;
+    height: 250px;
+    transform: translate(-19%, 43%);
   }
   @include iphoneSE {
     height: 135px;
-    top: 53%;
-    left: 62%;
+    transform: translate(7%, 53%);
   }
 }
 

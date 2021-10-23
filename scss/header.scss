@@ -258,20 +258,23 @@
 .header__block-woman {
   position: absolute;
   height: 290px;
+  width: 154px;
   top: 0;
-  transform: translate(-20%, 35%);
   left: 50%;
+  transform: translate(-20%, 35%);
   z-index: 1;
   @include iphoneXR {
     transform: translate(-20%, 39%);
   }
   @include iphoneX {
     height: 250px;
+    width: 129px;
     transform: translate(-19%, 43%);
   }
   @include iphoneSE {
     height: 135px;
-    transform: translate(7%, 53%);
+    width: 75px;
+    transform: translate(3%, 53%);
   }
 }
 

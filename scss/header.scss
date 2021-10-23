@@ -34,12 +34,8 @@
   }
 }
 
-.btn-dark {
-  background: #1a1a1a;
-  color: #ffffff;
-}
-
 .btn-select-theme {
+  background: white;
   width: 50px;
   height: 25px;
   border: none;
@@ -51,6 +47,11 @@
   @include iphoneXR {
     cursor: none;
   }
+}
+
+.btn-dark {
+  background: #1a1a1a;
+  color: #ffffff;
 }
 
 .btn-select-theme:focus {
@@ -83,12 +84,11 @@
 }
 
 .header__nav {
-  background: rgba(137, 74, 201);
   background: linear-gradient(
     90deg,
-    rgba(137, 74, 201, 1) 0%,
-    rgba(34, 34, 102, 0.3) 50%,
-    rgba(137, 74, 201, 1) 100%
+    rgba(137, 74, 201, 1),
+    rgba(34, 34, 102, 0.3),
+    rgba(137, 74, 201, 1)
   );
   height: 200px;
   width: 100%;
@@ -112,9 +112,9 @@
   border-width: 1px 0 0 0;
   border-image: linear-gradient(
     90deg,
-    rgba(137, 74, 201, 0.7) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(137, 74, 201, 0.7) 100%
+    rgba(137, 74, 201, 1),
+    rgba(255, 255, 255, 0.3),
+    rgba(137, 74, 201, 1)
   );
   border-image-slice: 1;
   height: 50px;

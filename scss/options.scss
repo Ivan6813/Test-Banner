@@ -1,256 +1,255 @@
 .options {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 50px;
-  @include iphoneXR {
-    margin-bottom: 29px;
-  }
-  @include iphoneX {
-    margin-bottom: 20px;
-  }
-  @include iphoneSE {
-    margin-bottom: 13px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    @include iphoneXR {
+        margin-bottom: 29px;
+    }
+    @include iphoneX {
+        margin-bottom: 20px;
+    }
+    @include iphoneSE {
+        margin-bottom: 13px;
+    }
 }
 
 .first-option,
 .second-option,
 .third-option {
-  background: var(--options-bg);
-  color: var(--textColor);
-  width: 200px;
-  height: 230px;
-  border-radius: 5px;
-  margin: 0 15px;
-  transition: all 0.7s ease;
-  cursor: pointer;
-  @include iphoneXR {
-    width: 118px;
-    height: 176px;
-    margin: 0 5px;
-    cursor: none;
-  }
-  @include iphoneX {
-    width: 105px;
-    height: 156px;
-  }
-  @include iphoneSE {
-    width: 88px;
-    height: 132px;
-  }
+    background: var(--options-bg);
+    color: var(--textColor);
+    width: 200px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 0 15px;
+    cursor: pointer;
+    @include iphoneXR {
+        width: 118px;
+        height: 176px;
+        margin: 0 5px;
+        cursor: none;
+    }
+    @include iphoneX {
+        width: 105px;
+        height: 156px;
+    }
+    @include iphoneSE {
+        width: 88px;
+        height: 132px;
+    }
 }
 
 .first-option {
-  height: 180px;
-  @include iphoneXR {
-    height: 151px;
-  }
-  @include iphoneX {
-    height: 131px;
-  }
-  @include iphoneSE {
-    height: 112px;
-  }
+    height: 180px;
+    @include iphoneXR {
+        height: 151px;
+    }
+    @include iphoneX {
+        height: 131px;
+    }
+    @include iphoneSE {
+        height: 112px;
+    }
 }
 
 .third-option {
-  display: flex;
-  flex-direction: column;
-  & .header-option {
-    background: #fca759;
-  }
+    display: flex;
+    flex-direction: column;
+    & .header-option {
+        background: #fca759;
+    }
 }
 
 .header-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background: #fcbf59;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  @include iphoneXR {
-    height: 25px;
-  }
-  @include iphoneSE {
-    height: 21px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: #fcbf59;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    @include iphoneXR {
+        height: 25px;
+    }
+    @include iphoneSE {
+        height: 21px;
+    }
 }
 
 .header-option__text {
-  font-family: "SFProText";
-  font-size: 20px;
-  letter-spacing: 0.78px;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  @include iphoneXR {
-    font-size: 13px;
-  }
-  @include iphoneSE {
-    font-size: 11px;
-  }
+    font-family: "SFProText";
+    font-size: 20px;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    @include iphoneXR {
+        font-size: 13px;
+    }
+    @include iphoneSE {
+        font-size: 11px;
+    }
 }
 
 .body-option,
 .first-option {
-  padding: 10px 15px;
-  @include iphoneXR {
-    padding: 6px 11px;
-  }
-  @include iphoneX {
-    padding: 3px 10px;
-  }
-  @include iphoneSE {
-    padding: 3px;
-  }
+    padding: 10px 15px;
+    @include iphoneXR {
+        padding: 6px 11px;
+    }
+    @include iphoneX {
+        padding: 3px 10px;
+    }
+    @include iphoneSE {
+        padding: 3px;
+    }
 }
 
 .body-option {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .footer-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35px;
-  background: #fca759;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  @include iphoneXR {
-    height: 16px;
-  }
-  @include iphoneSE {
-    height: 15px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background: #fca759;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    @include iphoneXR {
+        height: 16px;
+    }
+    @include iphoneSE {
+        height: 15px;
+    }
 }
 
 .footer-option__text {
-  font-family: "SFProText";
-  font-size: 15px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  @include iphoneXR {
-    font-size: 9px;
-  }
-  @include iphoneSE {
-    font-size: 7px;
-  }
+    font-family: "SFProText";
+    font-size: 15px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    @include iphoneXR {
+        font-size: 9px;
+    }
+    @include iphoneSE {
+        font-size: 7px;
+    }
 }
 
 .option__title {
-  font-family: "SFProText";
-  font-size: 15px;
-  line-height: normal;
-  text-align: center;
-  margin-bottom: 11px;
-  & span {
-    display: block;
-    font-size: 24px;
-    @include iphoneSE {
-      font-size: 20px;
-      line-height: 17px;
+    font-family: "SFProText";
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 11px;
+    & span {
+        display: block;
+        font-size: 24px;
+        @include iphoneSE {
+            font-size: 20px;
+            line-height: 17px;
+        }
     }
-  }
-  @include iphoneX {
-    line-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 6px;
-  }
-  @include iphoneSE {
-    font-size: 13px;
-    line-height: 17px;
-    margin: 5px 0;
-  }
+    @include iphoneX {
+        line-height: 20px;
+        margin-top: 5px;
+        margin-bottom: 6px;
+    }
+    @include iphoneSE {
+        font-size: 13px;
+        line-height: 17px;
+        margin: 5px 0;
+    }
 }
 
 .option__full-price {
-  font-family: "SFProText";
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  margin-bottom: 6px;
-  & span {
-    display: block;
-  }
-  @include iphoneXR {
-    font-size: 13px;
-    line-height: 16px;
-  }
-  @include iphoneX {
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-  @include iphoneSE {
-    font-size: 11px;
-    line-height: 13px;
-    margin-bottom: 3px;
-  }
+    font-family: "SFProText";
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 6px;
+    & span {
+        display: block;
+    }
+    @include iphoneXR {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    @include iphoneX {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    @include iphoneSE {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 3px;
+    }
 }
 
 .option__price-per-month {
-  font-family: "SFProText";
-  font-size: 16px;
-  text-align: center;
-  @include iphoneXR {
-    font-size: 12px;
-  }
-  @include iphoneSE {
-    font-size: 10px;
-  }
+    font-family: "SFProText";
+    font-size: 16px;
+    text-align: center;
+    @include iphoneXR {
+        font-size: 12px;
+    }
+    @include iphoneSE {
+        font-size: 10px;
+    }
 }
 
 .active {
-  background: #894ac9;
-  color: #ffffff;
+    background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%);
+    color: #ffffff;
 }
 
 /* btn continue */
 
 .btn__select-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  @include iphoneXR {
-    margin-bottom: 20px;
-  }
-  @include iphoneSE {
-    margin-bottom: 17px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    @include iphoneXR {
+        margin-bottom: 20px;
+    }
+    @include iphoneSE {
+        margin-bottom: 17px;
+    }
 }
 
 .btn-continue {
-  width: 375px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "SFProText";
-  font-size: 22px;
-  letter-spacing: 0.0352px;
-  color: #ffffff;
-  background: linear-gradient(225deg, #542285 0%, #222266 100%);
-  border-radius: 5px;
-  border: none;
-  @include iphoneX {
-    width: 335px;
-  }
-  @include iphoneSE {
-    width: 280px;
-  }
+    width: 375px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SFProText";
+    font-size: 22px;
+    letter-spacing: 0.0352px;
+    color: #ffffff;
+    background: linear-gradient(225deg, #542285 0%, #222266 100%);
+    border-radius: 5px;
+    border: none;
+    @include iphoneX {
+        width: 335px;
+    }
+    @include iphoneSE {
+        width: 280px;
+    }
 }
 
 .btn-continue:hover {
-  background: linear-gradient(225deg, #754f9b 0%, #3e3e94 100%);
-  transition: all 0.7s ease;
-  @include iphoneXR {
-    background: linear-gradient(225deg, #542285 0%, #222266 100%);
-  }
+    background: linear-gradient(225deg, #754f9b 0%, #3e3e94 100%);
+    transition: all 0.5s ease;
+    @include iphoneXR {
+        background: linear-gradient(225deg, #542285 0%, #222266 100%);
+    }
 }
 
 .btn-continue:focus {
-  outline: none;
+    outline: none;
 }

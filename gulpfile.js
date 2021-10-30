@@ -40,10 +40,10 @@ function css() {
 function js () {
     return src("js/*.js")
       .pipe(concat("script.js"))
-      .pipe(babel({
-        presets: ["@babel/preset-env"]
-        }))
-      .pipe(uglify())
+    //   .pipe(babel({
+    //     presets: ["@babel/preset-env"]
+    //     }))
+    //   .pipe(uglify())
       .pipe(dest("build/"));
   };
 

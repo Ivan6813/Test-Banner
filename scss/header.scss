@@ -1,284 +1,284 @@
 .header {
-  background: #894ac9;
-  padding: 30px 0 100px 0;
-  @include iphoneXR {
-    padding: 50px 0 116px 0;
-  }
-  @include iphoneX {
-    padding-bottom: 97px;
-  }
-  @include iphoneSE {
-    padding: 30px 0 73px 0;
-  }
+    background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%);
+    padding: 30px 0 100px 0;
+    @include iphoneXR {
+        padding: 50px 0 116px 0;
+    }
+    @include iphoneX {
+        padding-bottom: 97px;
+    }
+    @include iphoneSE {
+        padding: 30px 0 73px 0;
+    }
 }
 
 .header__btn {
-  display: flex;
-  justify-content: end;
-  justify-content: space-between;
-  padding: 0 14px;
-  @include iphoneSE {
-    padding: 0 10px;
-  }
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+    padding: 0 14px;
+    @include iphoneSE {
+        padding: 0 10px;
+    }
 }
 
 .btn-close {
-  background-image: url(./images/btn-header.svg);
-  width: 32px;
-  height: 32px;
-  border: none;
-  border-radius: 50%;
-  opacity: 0.5;
-  @include desktop {
-    display: none;
-  }
+    background-color: #fff;
+    background-image: url(./images/btn-header.png);
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.5;
+    @include desktop {
+        display: none;
+    }
 }
 
 .btn-select-theme {
-  background: white;
-  width: 50px;
-  height: 25px;
-  border: none;
-  border-radius: 30px;
-  opacity: 0.5;
-  transform: translateY(-100%);
-  transition: all 0.7s ease;
-  cursor: pointer;
-  @include iphoneXR {
-    cursor: none;
-  }
+    background: white;
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 30px;
+    opacity: 0.5;
+    transform: translateY(-100%);
+    cursor: pointer;
+    @include iphoneXR {
+        cursor: none;
+    }
 }
 
 .btn-dark {
-  background: #1a1a1a;
-  color: #ffffff;
+    background: #1a1a1a;
+    color: #ffffff;
 }
 
 .btn-select-theme:focus {
-  outline: none;
+    outline: none;
 }
 
 .header__title {
-  font-family: "SFProText";
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: -0.65px;
-  color: #fff;
-  margin: 20px 0 33px 0;
-  @include iphoneXR {
-    font-size: 34px;
-    margin: 0 0 33px 0;
-  }
-  @include iphoneX {
-    margin-bottom: 20px;
-  }
-  @include iphoneSE {
-    font-size: 23px;
-    letter-spacing: 0;
-    margin: -9px 0 7px 17px;
-  }
+    font-family: "SFProText";
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: -0.65px;
+    color: #fff;
+    margin: 20px 0 33px 0;
+    @include iphoneXR {
+        font-size: 34px;
+        margin: 0 0 33px 0;
+    }
+    @include iphoneX {
+        margin-bottom: 20px;
+    }
+    @include iphoneSE {
+        font-size: 23px;
+        letter-spacing: 0;
+        margin: -9px 0 7px 17px;
+    }
 }
 
 .header__nav-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .header__nav {
-  background: linear-gradient(
-    90deg,
-    rgba(137, 74, 201, 1),
-    rgba(34, 34, 102, 0.3),
-    rgba(137, 74, 201, 1)
-  );
-  height: 200px;
-  width: 100%;
-  @include iphoneX {
-    height: 180px;
-  }
-  @include iphoneSE {
-    height: 100px;
-  }
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.0001),
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.0001)
+    );
+    height: 200px;
+    width: 100%;
+    @include iphoneX {
+        height: 180px;
+    }
+    @include iphoneSE {
+        height: 100px;
+    }
 }
 
 .nav-list {
-  list-style: none;
+    list-style: none;
 }
 
 .nav-list__item {
-  display: flex;
-  align-items: center;
-  border-style: solid;
-  border-color: white;
-  border-width: 1px 0 0 0;
-  border-image: linear-gradient(
-    90deg,
-    rgba(137, 74, 201, 1),
-    rgba(255, 255, 255, 0.3),
-    rgba(137, 74, 201, 1)
-  );
-  border-image-slice: 1;
-  height: 50px;
-  padding-left: 50px;
-  @include iphoneXR {
-    padding-left: 34px;
-  }
-  @include iphoneX {
-    height: 45px;
-    padding-left: 21px;
-  }
-  @include iphoneSE {
-    height: 25px;
-    padding-left: 20px;
-  }
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 225, 0.01),
+        rgba(255, 255, 225, 0.3),
+        rgba(255, 255, 225, 0.01)
+    );
+    border-image-slice: 1;
+    height: 50px;
+    padding-left: 50px;
+    @include iphoneXR {
+        padding-left: 34px;
+    }
+    @include iphoneX {
+        height: 45px;
+        padding-left: 21px;
+    }
+    @include iphoneSE {
+        height: 25px;
+        padding-left: 20px;
+    }
 
-  &:last-child {
-    border-width: 1px 0 1px 0;
-  }
+    &:last-child {
+        border-width: 1px 0 1px 0;
+    }
 }
 
 .link-item {
-  text-decoration: none;
-  font-family: "SFProText";
-  font-size: 16px;
-  color: #fff;
-  @include iphoneXR {
-    font-size: 12px;
-  }
+    text-decoration: none;
+    font-family: "SFProText";
+    font-size: 16px;
+    color: #fff;
+    @include iphoneXR {
+        font-size: 12px;
+    }
 }
 
 .block-lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  @include desktop {
-    display: none;
-  }
-  @include iphoneX {
-    height: 180px;
-  }
-  @include iphoneSE {
-    height: 100px;
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include desktop {
+        display: none;
+    }
+    @include iphoneX {
+        height: 180px;
+    }
+    @include iphoneSE {
+        height: 100px;
+    }
 }
 
 .line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  @include iphoneX {
-    height: 180px;
-  }
-  @include iphoneSE {
-    height: 100px;
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    @include iphoneX {
+        height: 180px;
+    }
+    @include iphoneSE {
+        height: 100px;
+    }
 }
 
 .top {
-  background-repeat: no-repeat;
-  @include iphoneXR {
-    background-image: url(./images/topline415.svg);
-  }
-  @include iphoneX {
-    background-image: url(./images/topline375.svg);
-  }
-  @include iphoneSE {
-    background-image: url(./images/topline320.svg);
-  }
+    background-repeat: no-repeat;
+    @include iphoneXR {
+        background-image: url(./images/topline415.png);
+    }
+    @include iphoneX {
+        background-image: url(./images/topline375.png);
+    }
+    @include iphoneSE {
+        background-image: url(./images/topline320.png);
+    }
 }
 
 .bottom {
-  background-repeat: no-repeat;
-  @include iphoneXR {
-    background-image: url(./images/bottomline415.svg);
-  }
-  @include iphoneX {
-    background-image: url(./images/bottomline375.svg);
-  }
-  @include iphoneSE {
-    background-image: url(./images/bottomline320.svg);
-  }
+    background-repeat: no-repeat;
+    @include iphoneXR {
+        background-image: url(./images/bottomline415.png);
+    }
+    @include iphoneX {
+        background-image: url(./images/bottomline375.png);
+    }
+    @include iphoneSE {
+        background-image: url(./images/bottomline320.png);
+    }
 }
 
 .block-free {
-  text-align: center;
-  position: absolute;
-  width: 51px;
-  top: 29px;
-  right: 14px;
-  @include iphoneX {
-    top: 22px;
-    right: 29px;
-  }
-  @include iphoneSE {
-    top: 0;
-    right: 20px;
-  }
+    text-align: center;
+    position: absolute;
+    width: 51px;
+    top: 29px;
+    right: 14px;
+    @include iphoneX {
+        top: 22px;
+        right: 29px;
+    }
+    @include iphoneSE {
+        top: 0;
+        right: 20px;
+    }
 }
 
 .block-pro {
-  text-align: center;
-  position: absolute;
-  width: 51px;
-  top: 127px;
-  right: 14px;
-  @include iphoneX {
-    top: 110px;
-    right: 29px;
-  }
-  @include iphoneSE {
-    top: 51px;
-    right: 20px;
-  }
+    text-align: center;
+    position: absolute;
+    width: 51px;
+    top: 127px;
+    right: 14px;
+    @include iphoneX {
+        top: 110px;
+        right: 29px;
+    }
+    @include iphoneSE {
+        top: 51px;
+        right: 20px;
+    }
 }
 
 .cloud {
-  width: 100%;
+    width: 100%;
 }
 
 .cloud-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .dot {
-  width: 25px;
-  @include iphoneX {
-    margin-top: -2px;
-  }
-  @include iphoneSE {
-    margin-top: -4px;
-  }
+    width: 25px;
+    @include iphoneX {
+        margin-top: -2px;
+    }
+    @include iphoneSE {
+        margin-top: -4px;
+    }
 }
 
 .header__block-woman {
-  position: absolute;
-  height: 290px;
-  width: 154px;
-  top: 0;
-  left: 50%;
-  transform: translate(-20%, 35%);
-  z-index: 1;
-  @include iphoneXR {
-    transform: translate(-20%, 39%);
-  }
-  @include iphoneX {
-    height: 250px;
-    width: 129px;
-    transform: translate(-19%, 43%);
-  }
-  @include iphoneSE {
-    height: 135px;
-    width: 75px;
-    transform: translate(3%, 53%);
-  }
+    position: absolute;
+    height: 290px;
+    width: 154px;
+    top: 0;
+    left: 50%;
+    transform: translate(-20%, 35%);
+    z-index: 1;
+    @include iphoneXR {
+        transform: translate(-20%, 39%);
+    }
+    @include iphoneX {
+        height: 250px;
+        width: 129px;
+        transform: translate(-19%, 43%);
+    }
+    @include iphoneSE {
+        height: 135px;
+        width: 75px;
+        transform: translate(3%, 53%);
+    }
 }
 
 .woman-img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }

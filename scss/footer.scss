@@ -1,23 +1,22 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-  @include iphoneXR {
-    padding-bottom: 5px;
-  }
-  @include iphoneSE {
-    padding-bottom: 15px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    @include iphoneXR {
+        padding-bottom: 5px;
+    }
+    @include iphoneSE {
+        padding-bottom: 15px;
+    }
 }
 
 .footer__text {
-  font-family: "SFProText";
-  font-size: 15px;
-  color: var(--textColor);
-  transition: all 0.7s ease;
-  opacity: 0.4;
-  @include iphoneXR {
-    font-size: 11px;
-  }
+    font-family: "SFProText";
+    font-size: 15px;
+    color: var(--textColor);
+    opacity: 0.4;
+    @include iphoneXR {
+        font-size: 11px;
+    }
 }

@@ -70,6 +70,8 @@
 }
 
 .star {
+    width: 21px;
+    height: 21px;
     margin-right: 4px;
     @include iphoneX {
         margin-right: 5px;
@@ -78,6 +80,27 @@
         width: 17px;
         height: 17px;
         margin-right: 2px;
+    }
+    @include retina {
+        display: none;
+    }
+}
+
+.star-retina {
+    display: none;
+    width: 21px;
+    height: 21px;
+    @include retina {
+        display: block;
+        margin-right: 4px;
+        @include iphoneX {
+            margin-right: 5px;
+        }
+        @include iphoneSE {
+            width: 17px;
+            height: 17px;
+            margin-right: 2px;
+        }
     }
 }
 

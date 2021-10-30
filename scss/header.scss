@@ -33,6 +33,12 @@
     @include desktop {
         display: none;
     }
+    @include retina {
+        background-image: url(./images/btn-header-retina.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: center;
+    }
 }
 
 .btn-select-theme {
@@ -179,26 +185,26 @@
 .top {
     background-repeat: no-repeat;
     @include iphoneXR {
-        background-image: url(./images/topline415.png);
+        background-image: url(./images/topline415.svg);
     }
     @include iphoneX {
-        background-image: url(./images/topline375.png);
+        background-image: url(./images/topline375.svg);
     }
     @include iphoneSE {
-        background-image: url(./images/topline320.png);
+        background-image: url(./images/topline320.svg);
     }
 }
 
 .bottom {
     background-repeat: no-repeat;
     @include iphoneXR {
-        background-image: url(./images/bottomline415.png);
+        background-image: url(./images/bottomline415.svg);
     }
     @include iphoneX {
-        background-image: url(./images/bottomline375.png);
+        background-image: url(./images/bottomline375.svg);
     }
     @include iphoneSE {
-        background-image: url(./images/bottomline320.png);
+        background-image: url(./images/bottomline320.svg);
     }
 }
 
@@ -235,7 +241,18 @@
 }
 
 .cloud {
-    width: 100%;
+    width: 51px;
+    @include retina {
+        display: none;
+    }
+}
+
+.cloud-retina {
+    display: none;
+    width: 51px;
+    @include retina {
+        display: block;
+    }
 }
 
 .cloud-text {
@@ -246,12 +263,34 @@
 }
 
 .dot {
+    display: block;
+    margin: 0 auto;
     width: 25px;
+    margin-top: 3px;
     @include iphoneX {
-        margin-top: -2px;
+        margin-top: 2px;
     }
     @include iphoneSE {
-        margin-top: -4px;
+        margin-top: 1px;
+    }
+    @include retina {
+        display: none;
+    }
+}
+
+.dot-retina {
+    display: none;
+    width: 25px;
+    margin: 0 auto;
+    margin-top: 3px;
+    @include retina {
+        display: block;
+    }
+    @include iphoneX {
+        margin-top: 2px;
+    }
+    @include iphoneSE {
+        margin-top: 1px;
     }
 }
 
@@ -281,4 +320,16 @@
 .woman-img {
     width: 100%;
     height: 100%;
+    @include retina {
+        display: none;
+    }
+}
+
+.woman-retina-img {
+    display: none;
+    @include retina {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
